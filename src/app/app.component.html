@@ -1,23 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8" id="htmlData">
-      <table class="table table-bordered">
-        <!-- <tr class="table-primary">
-          <th>Id</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-        </tr> -->
-        <tr>
-          <th>{{USERS.id}}</th>
-          <td>{{USERS.name}}</td>
-          <!-- <td>{{USERS.email}}</td>
-          <td>{{USERS.phone}}</td> -->
-        </tr>
+<div class="container" id="htmlData">
+  
+      <table class="table">
+   
+        <tbody>
+          <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>Policy Holder Name</td>
+            <td>Aishwary</td>
+            <!-- <td>@mdo</td> -->
+          </tr>
+          <tr>
+            <!-- <th scope="row">2</th> -->
+            <td>Policy Number </td>
+            <td>Thornton</td>
+            <!-- <td>@fat</td> -->
+          </tr>
+           <tr>
+            <!-- <th scope="row">3</th> -->
+            <td>Estimated Amount</td>
+            <td>the Bird</td>
+            <!-- <td>@twitter</td>  -->
+          </tr> 
+          <tr >
+              <td colspan="2">
+
+                  <button type="button" id="btn" class="btn btn-secondary btn-block" (click)="openPDF()">Download PDF</button>
+              </td>
+
+          </tr>
+        </tbody>
+        <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> -->
       </table>
+    
+
     </div>
-    <div class="col-md-4 text-right">
-      <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
-    </div>
-  </div>
-</div>
+
+ 
